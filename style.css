@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  
+}
+
+header {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+  gap: 40px; 
+  padding: 40px;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  justify-items: center;
+}
+
+img.logo {
+  max-width: 300px;
+  height: auto;
+  
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* exactamente 4 logos por fila */
+  gap: 30px;                             /* espacio entre logos */
+  padding: 40px;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  justify-items: center; /* centra los logos en su celda */
+}
+
+.logo {
+  max-width: 140px; /* tamaño reducido */
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+img.logo:hover {
+  transform: scale(1.05);
+}
+
+main {
+  text-align: center;
+  padding: 20px;
+}
